@@ -4,12 +4,12 @@ An intelligent image captioning system that automatically generates descriptive 
 
 ## 📋 Overview
 
-This application uses a pre-trained **Xception** neural network for image feature extraction combined with an **LSTM** (Long Short-Term Memory) network for caption generation. The model is trained on the Flickr8k dataset and deployed as an interactive web application using Streamlit.
+This application uses a pre-trained DenseNet201 neural network for image feature extraction combined with an **LSTM** (Long Short-Term Memory) network for caption generation. The model is trained on the Flickr8k dataset and deployed as an interactive web application using Streamlit.
 
 ### Key Features
 - 🖼️ **Image Upload**: User-friendly interface to upload images (JPG, JPEG, PNG)
 - 🤖 **AI-Powered Captions**: Automatic caption generation using deep learning
-- 📊 **Feature Extraction**: State-of-the-art Xception CNN for robust image features
+- 📊 **Feature Extraction**: State-of-the-art DenseNet201 CNN for robust image features
 - 💬 **LSTM Sequence Generation**: Advanced LSTM model for natural language caption creation
 - 🎨 **Interactive Visualization**: View images with generated captions in real-time
 
@@ -87,9 +87,9 @@ Image Captioning/
 
 ## 🧠 Model Architecture
 
-### Feature Extraction (Xception)
+### Feature Extraction (DenseNet201)
 - **Input**: Image (224×224 pixels)
-- **Architecture**: Pre-trained Xception CNN
+- **Architecture**: Pre-trained DenseNet201 CNN
 - **Output**: 2048-dimensional feature vector
 
 ### Caption Generation
@@ -116,7 +116,7 @@ Key parameters in `main.py`:
 
 ```python
 max_length = 34          # Maximum caption length
-img_size = 224          # Image size for Xception
+img_size = 224          # Image size for DenseNet201
 ```
 
 Update model paths if necessary:
@@ -166,7 +166,6 @@ This project is open source. Please check the LICENSE file for details.
 ## 🙏 Acknowledgments
 
 - **Dataset**: Flickr8k
-- **Pre-trained Model**: Xception (Keras Applications)
 - **Framework**: TensorFlow/Keras
 - **Web Framework**: Streamlit
 
